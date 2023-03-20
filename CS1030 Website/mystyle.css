@@ -1,0 +1,335 @@
+body {
+    background-color: #FAF9F6;
+    
+}
+
+img {
+  border: 15px solid #C9A9A6
+}
+
+.button1-container-div {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.button1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 115px;
+    background-color: #FAF9F6;
+    border: none;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: crosshair;
+    margin: auto;
+}
+
+.button1 {
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #ADD8E6;
+}
+
+.name-container-div {
+    position: fixed;
+    left: 60px;
+    top: 30px;
+}
+
+.namebutton {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 60px;
+    background-color: #FAF9F6;
+    border: none;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: crosshair;
+}
+
+.namebutton {
+    transition: 0.4s;
+}
+
+.namebutton:hover {
+    background-color: #FFCCCB;
+}
+
+.grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 235px);
+  }
+  
+  div > div {
+    padding: 0px;
+    background-color: #FAF9F6;
+  }
+  .gridbutton1 {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    background-color: #FAF9F6;
+    border: none;
+    text-align: center;
+    cursor: crosshair;
+    border-radius: 24px;
+  }
+
+  .gridbutton1 {
+    transition: 0.4s;
+  }
+
+  .gridbutton1:hover {
+    background-color: #90EE90
+  }
+
+  /* Glitch */
+
+  .glitch-container {
+    text-align: center;
+  }
+  
+  .glitch {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+
+  /* report pages */
+  p {
+    text-indent: 3%;
+    line-height: 2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+  }
+
+  .recall-container-div {
+    position: fixed;
+    right: 60px;
+    top: 15px;
+  }
+
+  .backbutton {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    background-color: #FAF9F6;
+    border: none;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: crosshair;
+  }
+
+  .backbutton {
+    transition: 0.4s;
+  }
+
+  .backbutton:hover {
+    background-color: #CBC3E3
+  }
+
+  .lovelaceh1-container-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 25px 25px 25px 35px;
+  }
+  .lovelace-h1 {
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 60px;
+  }
+
+  .paragraph-container-div {
+    position: relative;
+    left: 300px;
+  }
+  .paragraph-container-div2 {
+    position: relative;
+    left: 350px;
+  }
+
+  .mla-container-div {
+    position: relative;
+    left: 350px;
+    padding-top: 25px;
+  }
+
+  .img-container-div {
+    position: relative;
+    left: 500px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .glitchtext {
+    font-family: 'Rubik Glitch', cursive;
+  }
+
+  .corrupted-binary-container-div {
+    position: fixed;
+    top: 25px;
+  }
+
+  .corrupted-binary-container-div2 {
+    position: fixed;
+    bottom: 35px;
+    right: 60px;
+  }
+
+  /* computer parts */
+
+  .computerparts-container-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 25px 25px 25px 35px;
+  }
+
+  .computerpartsh1 {
+    font-size: 60px;
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .h2-container-div {
+    text-align: center;
+    padding: 25px 25px 25px 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .specs-header {
+    font-family: 'Dosis', sans-serif;
+  }
+
+  .table-container-div {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 25px 25px 35px;
+    position: relative;
+    left: 50px;
+    width: 90%;
+  }
+.computerparts-table {
+  width: 90%;
+  }
+table, th, td {
+  border: 1px solid;
+  }
+
+
+  .ul-netlist-style {
+    list-style-type: circle;
+    list-style-position: inside;
+    line-height: 2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    display: table;
+    margin: 0 auto;
+  }
+
+  .networking-container-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 25px 25px 25px 35px;
+  }
+
+
+  .networkingh1 {
+    font-size: 60px;
+    font-family: 'Aboreto', cursive;
+    color: #800000;
+  }
+
+  .network-h2 {
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    color: #800000;
+  }
+
+  .careerh1-container-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 25px 25px 25px 35px;
+  }
+
+  .careerh1 {
+    font-size: 60px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #800000;
+  }
+
+  .career-h2 {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #800000;
+  }
+
+
